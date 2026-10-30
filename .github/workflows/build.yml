@@ -2,7 +2,7 @@ name: Build APK
 
 on:
   push:
-    branches: [ main]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ambil kode
-       uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Pasang Java
         uses: actions/setup-java@v4
